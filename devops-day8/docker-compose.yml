@@ -1,0 +1,22 @@
+version: "3.9"
+
+services:
+  web:
+    image: nginx
+    networks:
+      - frontend
+    depends_on:
+      - db
+
+  db:
+    image: mongo
+    volumes:
+      - db-data:/data/db
+    networks:
+      - frontend
+
+volumes:
+  db-data:
+
+networks:
+  frontend:

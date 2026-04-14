@@ -1,0 +1,4 @@
+exit
+docker network create my-app-network
+db.users.insertOne({name: "Vaibhav"})
+use testdb

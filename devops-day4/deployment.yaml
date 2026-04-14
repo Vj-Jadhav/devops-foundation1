@@ -1,0 +1,13 @@
+metadata:
+  name: web-server-alpha
+  version: 1.0.2
+
+specification:
+  replicas: 3
+  environment: production
+  ports:
+    - 80
+    - 443
+  resources:
+    cpu: "500m"
+    memory: "256Mi"
