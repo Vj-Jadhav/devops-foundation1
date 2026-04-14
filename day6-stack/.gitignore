@@ -1,0 +1,12 @@
+node_modules/
+.env
+*.log
+*.pdf
+*.jpg
+*.png
+*.exe
+*.zip
+*.pptx
+*.docx
+__pycache__/
+.git
