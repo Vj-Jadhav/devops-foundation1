@@ -1,4 +1,4 @@
-name: Day 11 CI Pipeline
+name: Day 11 in Devops CI Pipeline
 
 on:
   push:
