@@ -1,4 +1,4 @@
-name: DevOps CI Pipeline
+name: One-Click Infrastructure Pipeline
 
 on:
   push:
