@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: meetmux-api
+
+spec:
+  replicas: 3
+
+  selector:
+    matchLabels:
+      app: meetmux
+
+  template:
+    metadata:
+      labels:
+        app: meetmux
+
+    spec:
+      containers:
+        - name: api-container
+          image: nginx:latest
+          ports:
+            - containerPort: 80
